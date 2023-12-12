@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title Exemplo de Animação em Css >Tela Turbinada</title>
+    <style>
+        @keyframes animacao{
+            0%
+            {
+                width: 100%;
+                background-color:rgb(8, 0, 255);
+            }
+            50% 
+            {
+                width: 50%;
+                background-color:yellow;
+            }
+            100% {
+                width: 100%;
+                background-color:red;
+            }
+        }
+    
+    .elemento{
+        background-color: rgb(6, 148, 18);
+        animation-name: animacao;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+   
+        
+
+    }
+    </style>
+</head>
+<body>
+    <div class="elemento"><BIG>CARREGANDO</BIG></div>
+</body>
+</html>
