@@ -1,0 +1,73 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+header {
+    background-color: rgb(99, 97, 2);
+    color: white;
+    padding: 10px 0;
+}
+
+nav ul {
+list-style: none;
+text-align: center;
+}
+nav li {
+    display: inline;
+    margin-right:50px;
+}
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+.container {
+    text-align: center;
+    margin-top: 200px;
+}
+.fade-in{
+    animation: fadeIn 12s;
+}
+img {
+    max-width: 100%;
+}
+h1{
+    font-size: 65px;
+    margin: 20px 0;
+    color: rgb(103, 124, 11);
+}
+
+form{
+    text-align: left;
+    max-width: 400px;
+    margin: 0 auto;
+}
+label, input, textarea, button{
+    display: block;
+    margin-bottom: 10px;
+    width: 100%;
+}
+button{
+    background-color: rgb(90, 110, 20);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: rgb(65, 81, 18);
+
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    } 
+    
+}
+html{
+    background-color: #d6d1e6;
+  }
