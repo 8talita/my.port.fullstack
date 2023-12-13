@@ -1,8 +1,8 @@
 body{
-    background-color: rgb(10, 11, 16);
+    background-color: rgb(0, 0, 0);
     color: rgb(39, 158, 202);
     font-family: poppinsregular;
-    max-width:50%;
+    max-width: 65%;
     margin: 0 auto;
     padding: 15px;
 }
@@ -11,7 +11,6 @@ header{ display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-
 }
 
 #title{
@@ -65,14 +64,15 @@ main{
  }
  p{
     line-height: 20px;
-    max-width: 500px;
+    max-width: 100%;
     font-family:poppinsregular;
+    text-align: center;
  }
 
  img{
     width: 300px;
     flex-direction: column;
-    border-radius: 100%;
+    border-radius: 6px;
  }
 
  form{
@@ -83,12 +83,12 @@ main{
 
  input[  type="submit"]{
     height: 50px;
-    width: 50%;
+    width: 100%;
     background-color: rgb(43, 177, 226);
     color: rgb(255, 255, 255);
     font-weight:400;
-    font-size:1.4rem;
-    border-radius: 0.5rem;
+    font-size:1.2rem;
+    border-radius: 2rem;
     text-decoration: none;
  }
 
@@ -100,7 +100,7 @@ main{
     margin-top: 20px;
     height: 20px;
     padding: 15px;
-    border-radius: 20px;
+    border-radius: 2rem;
     border: none;
     font-size: 15px;
  }
@@ -108,11 +108,11 @@ main{
  .form_image{
     display: flex;
     flex-direction: row !important;
-    
  }
  .meio{
     display: flex;
     flex-direction:row;
+    text-align: center;
  }
 
  .btn{
@@ -120,7 +120,7 @@ main{
     border: none;
     padding: 1rem 4rem;
     display: inline-block;
-    border-radius: 0.5rem;
+    border-radius: 2rem;
  }
 
  .btn.btn-primary{
@@ -139,10 +139,12 @@ main{
    line-height: 20px;
 }
 
-.about_left{
-   width: 45%;
-   margin-right:10px;
+.about_left h2{
+   width: 100%;
+   margin-right:100px;
+   text-align: center;
 }
+
 
 .skills_content{
    display: flex;
@@ -169,6 +171,7 @@ main{
 
 .skills_item img{
    max-width: 100px
+   
 }
 
 .projects{
@@ -178,7 +181,6 @@ main{
    max-width: 500%;
    
 }
-
 
 .projects p{
    max-width: 100%;
@@ -192,6 +194,7 @@ main{
    
 }
 
+
 .element1{
    display:flex;
    flex-direction:row;
@@ -200,8 +203,8 @@ main{
 
 .element1 img{
    margin:center;
-   width:5rem ;
    border-radius:3%;
+   width: 150px;
 }
 
 .element2{
@@ -211,7 +214,7 @@ main{
 }
 .element2 img{
    margin:center;
-   width:5rem;
+   width: 150px;
    border-radius:3%;
 }
 
@@ -221,7 +224,7 @@ main{
 }
 .element3 img{
    margin:center;
-   width:5rem;
+   width: 150px;
    border-radius:3%;
 }
 .element4{
@@ -230,7 +233,7 @@ main{
 }
 .element4 img{
    margin:center;
-   width:5rem;
+   width: 150px;
    border-radius:3%;
 }
 .max-width{
@@ -253,7 +256,7 @@ main{
 }
 
 .mb-xl{
-   margin-bottom: 6rem;
+   margin-bottom: 3rem;
 }
 
 .footer_content{
@@ -261,8 +264,7 @@ main{
    flex-direction: column;
    align-items: center;
    text-align: center;
-   background-color: rgb(166, 32, 50);
-   padding: 5px;
+   background-color: rgb(5, 58, 58);
    border-radius: 15px;
    height: 50px;
    width: 100%;
@@ -276,9 +278,10 @@ main{
    color: white;
    align-items: center;
 }
+
 @media only screen and (max-width:1024px){
- html{font-size:100%}
-h1{font-size:6rem;
+ html{font-size:60%}
+h1{font-size:1rem;
 }}
 
 @media only screen and (max-width:768px){
