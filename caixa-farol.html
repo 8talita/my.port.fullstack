@@ -1,0 +1,78 @@
+
+ <style>
+
+    .caixa{ 
+        background-color: darkblue;
+        width:400;
+        border-radius: 50px;
+    }
+
+    .sinal{
+        background-color: black;
+        border-radius: 150px;
+        margin: 150px;
+        height: 100px;
+        width: 100px;
+    }
+
+    .vermelho{
+        animation-name: animacao_vermelho;
+        animation-duration: 2s;
+    }
+
+    .amarelo{
+        animation-name: animacao_amarelo;
+        animation-delay: 2s;
+        animation-duration: 2s;
+
+    }
+
+    .verde{
+        animation-name: animacao_verde;
+        animation-delay: 4s;
+        animation-duration: 2s;
+    }
+
+    @keyframes animacao_vermelho{
+            from{ 
+                background-color: black;
+            }
+            to{
+                background-color: red;
+            }   
+        }
+    @keyframes animacao_amarelo{
+            from{ 
+                background-color: black;
+            }
+            to{
+                background-color: yellow;
+            }   
+        }
+    @keyframes animacao_verde{
+            from{ 
+                background-color: black;
+            }
+            to{
+                background-color: green;
+            }   
+        }
+        html {
+  background-color: #6182a1;
+}
+ </style>
+    <title>Documentos</title>
+</head>
+<body>
+    <div class="caixa">
+        <div class="sinal vermelho"></div>
+        <div class="sinal amarelo"></div>
+        <div class="sinal verde"></div>
+    </div>
+    
+      
+
+
+       
+</body>
+</html>

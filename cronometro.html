@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cronômetro</title>
+    <style>
+
+body{
+    text-align: center;
+    color: red;
+    font-family: Arial, sans-serif;
+}
+.cronometro{
+    margin: 50px auto;
+    width: 200px;
+    
+}
+.display{
+    font-size: 50px;
+  
+}
+.botoes{
+    font-size: 16px;
+    padding: 5px 10px;
+    margin: 5px;
+    
+}
+    </style>
+
+</head>
+<body> 
+ 
+    <div class="=cronometro">
+        <div class="display">
+        <span id="minutos">00</span>:<span id="segundos">00</span>
+    </div> 
+    <div class="botoes">
+        <button id="iniciar">Iniciar</button>
+        <button id="parar">Parar</button>
+        <button id="zerar">Zerar</button>
+    </div>
+    
+</div>
+<script>
+
+let minutosDisplay = document.getElementById("minutos");
+let segundosDisplay = document.getElementById("segundos");
+let iniciarBotao = document.getElementById("iniciar");
+let pararBotao = document.getElementById("parar");
+let zerarBotao = document.getElementById("zerar");
+
+let minutos = 0;
+let segundos = 0;
+let cronometroAtivo = false;
+let timer = 1;
+function atualizarDisplay(){ 
+    minutosDisplay.textContent = minutos.toString().padStart(2,"0");    
+    segundosDisplay.textContent = segundos.toString().padStart(2,"0");   
+}
+
+function iniciarCronometro(){
+    if(!cronometroAtivo){
+        cronometroAtivo = true;
+        timer = setInterval(function(){
+            segundos++;
+            if(segundos === 60){
+                segundos= 0;
+                minutos++;
+            }
+            atualizarDisplay();
+        }, 1000);
+    }
+}
+
+function pararCronometro(){
+    cronometroAtivo = false;
+    clearInterval(timer);
+}
+
+function zerarCronometro(){
+    minutos = 0;
+    segundos = 0;
+    atualizarDisplay();
+    pararCronometro();
+}
+
+iniciarBotao.addEventListener("click", iniciarCronometro);
+pararBotao.addEventListener("click", pararCronometro);
+zerarBotao.addEventListener("click", zerarCronometro);
+
+</script>
+</body>
+</html>
