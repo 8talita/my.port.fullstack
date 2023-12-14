@@ -131,9 +131,9 @@ main{
     text-decoration: none;
  }
 
- .about{
-   display: flex;
-}
+.about{ flex-direction: column;
+      
+   }
 
 .about h2{
    line-height: 20px;
