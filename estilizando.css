@@ -1,5 +1,5 @@
 body{
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(10, 10, 10);
     color: rgb(39, 158, 202);
     font-family: poppinsregular;
     max-width: 65%;
@@ -17,6 +17,7 @@ header{ display: flex;
     flex-direction: column;
     line-height: 10px;
 }
+
 li{
     display: inline-block;
     margin: 15px;
@@ -40,6 +41,7 @@ a:hover{
 #inscreva-se-btn:hover{
     background-color: blueviolet;
     color: white;
+    
 }
 h1{
     font-size: 40px; 
@@ -53,10 +55,9 @@ main{
 }
  h2{
     font-size: 34px; 
-    line-height: 10px;
+    line-height: 30px;
     font-family:poppinsregular;
-    background-color: rgb(0, 0, 0);
-    
+    margin: 30px 30px;
  }
  span{
     color: rgb(200, 41, 30);
@@ -72,7 +73,7 @@ main{
  img{
     width: 300px;
     flex-direction: column;
-    border-radius: 6px;
+    border-radius: 3%;
  }
 
  form{
@@ -131,12 +132,12 @@ main{
     text-decoration: none;
  }
 
-.about{ flex-direction: column;
+ .about{ flex-direction: column;
       
-   }
+ }
 
 .about h2{
-   line-height: 20px;
+   flex-direction: column;
 }
 
 .about_left h2{
@@ -155,24 +156,31 @@ main{
 .description{
    text-align: center;
    max-width: 100%;
+   
 }
 
 
 .redesocial{ 
-   width:50px 20px;
-   display:flex;
-   
+   display: flex;
+   flex-direction: row;
+
 }
-.redesocial img{ 
-   width:60px;
-   margin-bottom: 1rem;
+
+.redesocial img{
+margin: center;
+max-width: 30%;
+flex-direction: row;
+ali
 }
+
 
 
 .skills_item img{
-   max-width: 100px
+   max-width: 120px;
+   
    
 }
+
 
 .projects{
    text-align: center !important;
@@ -203,8 +211,8 @@ main{
 
 .element1 img{
    margin:center;
-   border-radius:3%;
    width: 150px;
+   border-radius:3%;
 }
 
 .element2{
@@ -243,13 +251,18 @@ main{
 }
 .mb-0{
    margin-bottom: 0;
+   
 }
 .mb-s{
    margin-bottom: 1rem;
+   text-align: center;
+   max-width: 60%;
 }
 
 .mb-m{
    margin-bottom: 4rem;
+   text-align: center;
+   max-width: 100%;
 }
 .mb-l{
    margin-bottom: 2rem;
@@ -260,13 +273,11 @@ main{
 }
 
 .footer_content{
-   display:flex;
+   display:inline-block;
    flex-direction: column;
    align-items: center;
    text-align: center;
-   background-color: rgb(5, 58, 58);
-   border-radius: 15px;
-   height: 50px;
+   height: 10px;
    width: 100%;
 }
 .footer-contact span{
