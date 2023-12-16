@@ -1,0 +1,157 @@
+</html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link ref="stylesheet" href="imc.css">
+ 
+    <title>CALCULE SEU IMC</title>
+</head>
+<body>
+    <main>
+      <div class="container">
+        <div class="title"> Calcule seu IMC </div>
+        <div class="input">
+            <label>Nome:</label>
+            <input type="text" id="nome">
+        </div>
+        <div class="input">
+            <label>Altura:</label>
+            <input type="number" id="altura">
+        </div>
+        <div class="input">
+            <label>Peso:</label>
+            <input type="number" id="peso">
+        </div>
+        <button id="calcular">Calcular</button>
+
+        <div class="result" id="resultado"></div>
+      </div>
+    </main>
+   <script>
+    
+var calcular = document.getElementById("calcular");
+
+function imc(){
+    var nome = document.getElementById("nome").value;
+    var altura = +document.getElementById("altura").value;
+    var peso = +document.getElementById("peso").value;
+    var resultado = document.getElementById("resultado");
+
+    if (nome !== "" && altura !== "" && peso !== "") {
+
+        var valorIMC = (peso / (altura * altura)).toFixed(1);
+
+        var parametro = "";
+
+        if (valorIMC < 18.5){
+          parametro = "abaixo do peso.";
+        }else if (valorIMC < 25) {
+          parametro = "com peso compatível";
+        }else if (valorIMC < 30){
+          parametro = "acima do peso.";
+        }else if (valorIMC < 35){
+          parametro = "obesidade grau I.";
+        }else if (valorIMC < 40){
+          parametro = "obesidade grau II";
+        }else {
+          parametro = "obesidade grau III";
+        }
+
+        resultado.textContent = `${nome},seu IMC é ${valorIMC} e você está ${parametro}`;
+        
+    }else {
+        resultado.textContent = "Ops! Você precisa preencher todos os itens para receber a resposta";
+    }
+
+}
+calcular.addEventListener("click", imc);
+
+   </script>
+     <style>
+ main{
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background: rgb(128, 157, 242);
+
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  background: rgb(223, 167, 88);
+  width: 400px;
+  height: 500px;
+  align-items: center;
+  justify-content: space-evenly;
+  border-radius: 50px;
+  box-shadow: 0 0 60px rgb(203, 232, 59);
+}
+
+.title{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  font: bold 2.5rem serif;
+  margin-bottom: 20px;
+}
+
+.input {
+  display: flex; 
+  color: rgb(0, 0, 0);
+  width: 300px;
+  height: 50px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.input input {
+  width: 200px;
+  height: 50px;
+  border-radius: 5px;
+  border:none;
+  outline: 0;
+  font: bold 1.5rem serif;
+  text-align: center;
+  box-shadow: 0 0 20px rgb(175, 66, 16);
+}
+
+.input label {
+  font: bold 1.5rem serif;
+}
+
+button{
+  width: 300px;
+  height: 40px;
+  font: bold 1.2rem serif;
+  cursor: pointer;
+  background: rgb(190, 10, 10)b2b;
+  color: rgb(0, 0, 0);
+  outline: none;
+  border-radius: 5px; 
+}
+
+.result{
+  display: flex;
+  margin-top: 20px;
+  align-items: center;
+  width: 300px;
+  height: 100px;
+  border-radius: 5px;
+  font: normal 2rem serif;
+  box-shadow: 0px 0px 10px black;
+  background: #fff;
+  color: rgb(180, 15, 15);
+  padding: 20px;
+  box-sizing: border-box;
+  user-select: none;
+}
+     </style>
+  </body>
+</html>
