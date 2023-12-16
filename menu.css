@@ -1,0 +1,55 @@
+header{
+    background-color:  rgb(167, 173, 5);
+    color: black
+    padding 10px 0;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav ul{
+    list-style: none;
+    text-align: center;
+}
+nav li{
+    display: inline;
+    margin-right: 20px;
+}
+nav a{
+    text-decoration: none
+    color rgb(171, 63, 63)
+    font-weight bold
+}
+.container{
+    text-align: center;
+    margin-top: 20px;
+}
+img{
+    max-width: 75%;
+}
+h1{
+    font-size: 24px;
+    margin: 20px 0;
+}
+form{
+    text-align: left;
+    max-width: 400px;
+    margin: 0 auto;
+    
+}
+label, input, textarea, button{
+    display: block;
+    margin-bottom: 10px;
+    width: 100%;
+}
+button{
+    background-color: rgb(167, 173, 5);
+    color: black;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+button:hover{
+    background-color: rgb(92, 97, 3);
+}
