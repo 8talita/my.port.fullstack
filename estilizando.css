@@ -18,11 +18,11 @@ header{ display: flex;
     line-height: 10px;
 }
 
-li{
-    display: inline-block;
-    margin: 15px;
-    width: 150px;
-}
+
+
+   li {margin-inline: auto;
+
+            }
 a{
     color:rgb(39, 158, 202);
 }
