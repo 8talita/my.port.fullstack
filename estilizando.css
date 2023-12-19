@@ -13,18 +13,21 @@ header{ display: flex;
     align-items: center;
 }
 
+.navbar_links{
+margin-inline: auto;
+margin-right:4rem;
+word-spacing: 3rem;
+}
 #title{
-    flex-direction: column;
-    line-height: 10px;
+    flex-direction: row;
+    line-height: 3px;
+    
 }
 
 
-
-   li {margin-inline: auto;
-
-            }
 a{
     color:rgb(39, 158, 202);
+    margin: auto;
 }
 
 a:hover{
@@ -46,13 +49,14 @@ a:hover{
 h1{
     font-size: 40px; 
    font-weight: 200;
+   margin: 2.4rem;
+   text-align: center;
+   max-width: 100%;
+   padding: auto;
+
 }
 
-main{
-    display: flex;
-    flex-direction: column;
-    margin-top: 50px;
-}
+
  h2{
     font-size: 34px; 
     line-height: 30px;
@@ -64,7 +68,7 @@ main{
 
  }
  p{
-    line-height: 20px;
+  margin: 3rem;
     max-width: 100%;
     font-family:poppinsregular;
     text-align: center;
@@ -110,11 +114,7 @@ main{
     display: flex;
     flex-direction: row !important;
  }
- .meio{
-    display: flex;
-    flex-direction:row;
-    text-align: center;
- }
+
 
  .btn{
     background-color: none;
@@ -149,8 +149,9 @@ main{
 
 .skills_content{
    display: flex;
-   flex-direction: column;
+   flex-direction: row;
    text-align: center;
+   margin: center;
 }
 
 .description{
@@ -170,36 +171,36 @@ main{
 margin: center;
 max-width: 30%;
 flex-direction: row;
-ali
 }
 
 
 
 .skills_item img{
-   max-width: 120px;
-   
-   
-}
+   width: 70px;
+      height: auto;
+      margin: center;
+      display: flex;
+      flex-direction: row;
+   }
 
 
 .projects{
    text-align: center !important;
    display: flex;
-   flex-direction: column;
-   max-width: 500%;
+   max-width: 100%;
    
 }
 
 .projects p{
    max-width: 100%;
-   text-align: center;
-   flex-direction: column;
+   flex-direction: block;
    
 }
 .project_info{
-  align-items:center;
+  align-items: first baseline;
   width: 150px;
-   
+  margin: center;
+  display: flex;
 }
 
 
